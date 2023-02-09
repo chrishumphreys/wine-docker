@@ -1,3 +1,7 @@
+Wine running in docker with virtual framebuffer for X and noVNC. Useful if you want to package windows apps for Linux.
+
+Based on https://github.com/solarkennedy/wine-x11-novnc-docker/blob/master/Dockerfile
+
 # Building
 
 docker build -t wine-docker .
