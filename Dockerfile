@@ -19,8 +19,8 @@ RUN wget -O - https://dl.winehq.org/wine-builds/winehq.key | apt-key add -  && \
 RUN apt-get update && apt-get -y install winehq-stable
 
 # Install and unpack Wine-mono as shared install
-RUN mkdir -p /usr/share/wine/mono && wget -O /usr/share/wine/mono/wine-mono-7.4.0-x86.tar.xz https://dl.winehq.org/wine/wine-mono/7.4.0/wine-mono-7.4.0-x86.tar.xz
-RUN cd /usr/share/wine/mono/ && tar -xJf wine-mono-7.4.0-x86.tar.xz
+RUN mkdir -p /usr/share/wine/mono && wget -O /usr/share/wine/mono/wine-mono-8.1.0-x86.tar.xz https://dl.winehq.org/wine/wine-mono/8.1.0/wine-mono-8.1.0-x86.tar.xz
+RUN cd /usr/share/wine/mono/ && tar -xJf wine-mono-8.1.0-x86.tar.xz
 
 # Install and unpack Wine-gecko (for html .net component) as shared install
 RUN mkdir -p /usr/share/wine/gecko && wget -O /usr/share/wine/gecko/wine-gecko-2.47.3-x86.tar.xz https://dl.winehq.org/wine/wine-gecko/2.47.3/wine-gecko-2.47.3-x86.tar.xz
